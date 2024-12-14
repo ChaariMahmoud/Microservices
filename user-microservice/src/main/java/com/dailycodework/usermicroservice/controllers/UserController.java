@@ -4,6 +4,9 @@ package com.dailycodework.usermicroservice.controllers;
 
 import com.dailycodework.usermicroservice.entities.User;
 import com.dailycodework.usermicroservice.services.UserService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +20,9 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
+    @Retry(name = "myRetry", fallbackMethod = "fallback")
+    @RateLimiter(name = "myRateLimiter", fallbackMethod = "fallback")
+    @CircuitBreaker(name = "usermicroService", fallbackMethod = "fallback")
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
@@ -42,5 +48,8 @@ public class UserController {
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
+    }
+    public String fallback(Exception e) {
+        return "Trop de requêtes ou problème avec le service utilisateur, veuillez réessayer plus tard.";
     }
 }
