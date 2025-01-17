@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.6.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ELASTIC_PASSWORD=changeme  # Set your own password
+      - xpack.security.enabled=false  # Disable security for local development
+    networks:
+      - elk
+    ports:
+      - "9200:9200"  # Expose port 9200 for HTTP traffic
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    restart: always
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.6.0
+    container_name: logstash
+    environment:
+      - LOGSTASH_PASSWORD=changeme  # Set your own password if needed
+    networks:
+      - elk
+    ports:
+      - "5044:5044"  # Expose port for Logstash Beats input
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    restart: always
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.6.0
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200  # Use HTTP for connection
+      - ELASTICSEARCH_USERNAME=elastic  # Elasticsearch username
+      - ELASTICSEARCH_PASSWORD=changeme  # Elasticsearch password
+    networks:
+      - elk
+    ports:
+      - "5601:5601"  # Expose Kibana's web interface
+    restart: always
+
+
+networks:
+  elk:
+    driver: bridge
+
+volumes:
+  esdata:
+    driver: local

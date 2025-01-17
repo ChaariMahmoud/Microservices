@@ -1,0 +1,725 @@
+2025-01-15T00:22:50.646+01:00  INFO 51657 --- [main] c.d.d.DsMicroservicesApplication         : Starting DsMicroservicesApplication using Java 17.0.13 with PID 51657 (/home/hamoud/IdeaProjects/DS_microservices/ds_microservices/target/classes started by hamoud in /home/hamoud/IdeaProjects/DS_microservices/ds_microservices)
+2025-01-15T00:22:50.647+01:00  INFO 51657 --- [main] c.d.d.DsMicroservicesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T00:22:51.062+01:00  INFO 51657 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T00:22:51.111+01:00  INFO 51657 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2025-01-15T00:22:51.225+01:00  INFO 51657 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d0ab837-4278-34da-bc49-bc3fc4c84683
+2025-01-15T00:22:51.338+01:00  INFO 51657 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T00:22:51.339+01:00  INFO 51657 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T00:22:51.341+01:00  INFO 51657 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T00:22:51.487+01:00  INFO 51657 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T00:22:51.502+01:00  INFO 51657 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-15T00:22:51.503+01:00  INFO 51657 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-15T00:22:51.586+01:00  INFO 51657 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15T00:22:51.596+01:00  INFO 51657 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-15T00:22:51.712+01:00  INFO 51657 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@254513e8
+2025-01-15T00:22:51.713+01:00  INFO 51657 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-15T00:22:51.730+01:00  WARN 51657 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15T00:22:51.731+01:00  WARN 51657 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-15T00:22:52.037+01:00  INFO 51657 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15T00:22:52.056+01:00  INFO 51657 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-15T00:22:52.548+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-15T00:22:52.549+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-15T00:22:52.549+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-15T00:22:52.549+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-15T00:22:52.549+01:00  INFO 51657 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-15T00:22:52.824+01:00  INFO 51657 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoint(s) beneath base path '/actuator'
+2025-01-15T00:22:53.028+01:00  INFO 51657 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-15T00:22:53.053+01:00  WARN 51657 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-15T00:22:53.090+01:00  INFO 51657 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-15T00:22:53.103+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-15T00:22:53.105+01:00  INFO 51657 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T00:22:53.112+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-15T00:22:53.112+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-15T00:22:53.112+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-15T00:22:53.112+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-15T00:22:53.112+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-15T00:22:53.112+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-15T00:22:53.112+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-15T00:22:53.231+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-15T00:22:53.232+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-15T00:22:53.233+01:00  INFO 51657 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-15T00:22:53.235+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736896973235 with initial instances count: 2
+2025-01-15T00:22:53.240+01:00  INFO 51657 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DS_MICROSERVICES with eureka with status UP
+2025-01-15T00:22:53.240+01:00  INFO 51657 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736896973240, current=UP, previous=STARTING]
+2025-01-15T00:22:53.241+01:00  INFO 51657 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T00:22:53.258+01:00  INFO 51657 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T00:22:53.291+01:00  INFO 51657 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8083
+2025-01-15T00:22:53.292+01:00  INFO 51657 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-01-15T00:22:53.307+01:00  INFO 51657 --- [main] c.d.d.DsMicroservicesApplication         : Started DsMicroservicesApplication in 2.862 seconds (process running for 3.065)
+2025-01-15T00:27:53.113+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T00:32:53.114+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T00:37:53.115+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T00:42:53.115+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T00:47:53.116+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T00:52:53.117+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T00:57:53.117+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:02:53.118+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:07:53.118+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:12:53.119+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:17:53.120+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:22:53.120+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:27:53.121+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:32:53.121+01:00  INFO 51657 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:34:48.851+01:00  INFO 51657 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DS_MICROSERVICES with eureka with status DOWN
+2025-01-15T01:34:48.851+01:00  INFO 51657 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736901288851, current=DOWN, previous=UP]
+2025-01-15T01:34:48.851+01:00  INFO 51657 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T01:34:48.855+01:00  INFO 51657 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T01:34:48.860+01:00  INFO 51657 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:34:48.861+01:00  INFO 51657 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-15T01:34:48.863+01:00  INFO 51657 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-15T01:34:50.871+01:00  INFO 51657 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-15T01:34:53.871+01:00  WARN 51657 --- [DiscoveryClient-1] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-01-15T01:34:53.872+01:00  INFO 51657 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-15T01:34:53.883+01:00  INFO 51657 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - deregister  status: 200
+2025-01-15T01:34:53.886+01:00  INFO 51657 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-15T01:34:55.136+01:00  INFO 59541 --- [main] c.d.d.DsMicroservicesApplication         : Starting DsMicroservicesApplication using Java 17.0.13 with PID 59541 (/home/hamoud/IdeaProjects/DS_microservices/ds_microservices/target/classes started by hamoud in /home/hamoud/IdeaProjects/DS_microservices/ds_microservices)
+2025-01-15T01:34:55.137+01:00  INFO 59541 --- [main] c.d.d.DsMicroservicesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:34:55.651+01:00  INFO 59541 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T01:34:55.725+01:00  INFO 59541 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces.
+2025-01-15T01:34:55.847+01:00  INFO 59541 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=679bee0d-2417-3891-999d-9e74d5f36346
+2025-01-15T01:34:56.129+01:00  INFO 59541 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:34:56.131+01:00  INFO 59541 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:34:56.132+01:00  INFO 59541 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:34:56.283+01:00  INFO 59541 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T01:34:56.299+01:00  INFO 59541 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-15T01:34:56.300+01:00  INFO 59541 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-15T01:34:56.394+01:00  INFO 59541 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15T01:34:56.405+01:00  INFO 59541 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-15T01:34:56.544+01:00  INFO 59541 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51b41740
+2025-01-15T01:34:56.545+01:00  INFO 59541 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-15T01:34:56.564+01:00  WARN 59541 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15T01:34:56.564+01:00  WARN 59541 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-15T01:34:56.965+01:00  INFO 59541 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15T01:34:57.255+01:00  INFO 59541 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:34:57.733+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-15T01:34:57.734+01:00  INFO 59541 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-15T01:34:58.038+01:00  INFO 59541 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoint(s) beneath base path '/actuator'
+2025-01-15T01:34:58.144+01:00  INFO 59541 --- [main] o.a.s.a.XStreamAutoConfiguration         : Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2025-01-15T01:34:58.202+01:00  INFO 59541 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [com.dailycodework.ds_microservices].
+2025-01-15T01:34:58.203+01:00  INFO 59541 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2025-01-15T01:34:58.203+01:00  INFO 59541 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.deadletter.jpa].
+2025-01-15T01:34:58.203+01:00  INFO 59541 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2025-01-15T01:34:58.203+01:00  INFO 59541 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventsourcing.eventstore.jpa].
+2025-01-15T01:34:58.210+01:00  INFO 59541 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:34:58.210+01:00  INFO 59541 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:34:58.210+01:00  INFO 59541 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2025-01-15T01:34:58.210+01:00  INFO 59541 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2025-01-15T01:34:58.491+01:00  INFO 59541 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-15T01:34:58.518+01:00  WARN 59541 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-15T01:34:58.560+01:00  INFO 59541 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-15T01:34:58.585+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-15T01:34:58.587+01:00  INFO 59541 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:34:58.597+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-15T01:34:58.597+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-15T01:34:58.597+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-15T01:34:58.597+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-15T01:34:58.597+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-15T01:34:58.597+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-15T01:34:58.597+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-15T01:34:58.737+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-15T01:34:58.739+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-15T01:34:58.740+01:00  INFO 59541 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-15T01:34:58.742+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736901298742 with initial instances count: 2
+2025-01-15T01:34:58.747+01:00  INFO 59541 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DS_MICROSERVICES with eureka with status UP
+2025-01-15T01:34:58.747+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736901298747, current=UP, previous=STARTING]
+2025-01-15T01:34:58.748+01:00  INFO 59541 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T01:34:58.767+01:00  INFO 59541 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T01:34:58.803+01:00  INFO 59541 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8083
+2025-01-15T01:34:58.803+01:00  INFO 59541 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-01-15T01:34:58.864+01:00  WARN 59541 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'springAxonConfiguration'
+2025-01-15T01:34:58.875+01:00  INFO 59541 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:34:58.876+01:00  INFO 59541 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-15T01:34:58.880+01:00  INFO 59541 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-15T01:35:00.886+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-15T01:35:03.887+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-15T01:35:03.891+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - deregister  status: 200
+2025-01-15T01:35:03.893+01:00  INFO 59541 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-15T01:35:03.905+01:00  INFO 59541 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-15T01:35:03.925+01:00 ERROR 59541 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    io.grpc.Metadata$Key.validateName(Metadata.java:754)
+
+The following method did not exist:
+
+    'void com.google.common.base.Preconditions.checkArgument(boolean, java.lang.String, char, java.lang.Object)'
+
+The calling method's class, io.grpc.Metadata$Key, was loaded from the following location:
+
+    jar:file:/home/hamoud/.m2/repository/io/grpc/grpc-api/1.50.2/grpc-api-1.50.2.jar!/io/grpc/Metadata$Key.class
+
+The called method's class, com.google.common.base.Preconditions, is available from the following locations:
+
+    jar:file:/home/hamoud/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/base/Preconditions.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    com.google.common.base.Preconditions: file:/home/hamoud/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes io.grpc.Metadata$Key and com.google.common.base.Preconditions
+
+2025-01-15T01:36:04.015+01:00  INFO 59876 --- [main] c.d.d.DsMicroservicesApplication         : Starting DsMicroservicesApplication using Java 17.0.13 with PID 59876 (/home/hamoud/IdeaProjects/DS_microservices/ds_microservices/target/classes started by hamoud in /home/hamoud/IdeaProjects/DS_microservices/ds_microservices)
+2025-01-15T01:36:04.017+01:00  INFO 59876 --- [main] c.d.d.DsMicroservicesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:36:04.489+01:00  INFO 59876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T01:36:04.550+01:00  INFO 59876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2025-01-15T01:36:04.662+01:00  INFO 59876 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=679bee0d-2417-3891-999d-9e74d5f36346
+2025-01-15T01:36:04.922+01:00  INFO 59876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:36:04.923+01:00  INFO 59876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:36:04.924+01:00  INFO 59876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:36:05.066+01:00  INFO 59876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T01:36:05.082+01:00  INFO 59876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-15T01:36:05.083+01:00  INFO 59876 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-15T01:36:05.165+01:00  INFO 59876 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15T01:36:05.175+01:00  INFO 59876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-15T01:36:05.296+01:00  INFO 59876 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550574cb
+2025-01-15T01:36:05.297+01:00  INFO 59876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-15T01:36:05.314+01:00  WARN 59876 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15T01:36:05.315+01:00  WARN 59876 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-15T01:36:05.709+01:00  INFO 59876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15T01:36:05.752+01:00  INFO 59876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-15T01:36:06.205+01:00  INFO 59876 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-15T01:36:06.488+01:00  INFO 59876 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoint(s) beneath base path '/actuator'
+2025-01-15T01:36:06.575+01:00  INFO 59876 --- [main] o.a.s.a.XStreamAutoConfiguration         : Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2025-01-15T01:36:06.626+01:00  INFO 59876 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [com.dailycodework.ds_microservices].
+2025-01-15T01:36:06.626+01:00  INFO 59876 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2025-01-15T01:36:06.626+01:00  INFO 59876 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.deadletter.jpa].
+2025-01-15T01:36:06.626+01:00  INFO 59876 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2025-01-15T01:36:06.626+01:00  INFO 59876 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventsourcing.eventstore.jpa].
+2025-01-15T01:36:06.633+01:00  INFO 59876 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:36:06.633+01:00  INFO 59876 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:36:06.633+01:00  INFO 59876 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2025-01-15T01:36:06.633+01:00  INFO 59876 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2025-01-15T01:36:06.870+01:00  INFO 59876 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-15T01:36:06.893+01:00  WARN 59876 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-15T01:36:06.925+01:00  INFO 59876 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-15T01:36:06.939+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-15T01:36:06.941+01:00  INFO 59876 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:36:06.948+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-15T01:36:06.948+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-15T01:36:06.948+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-15T01:36:06.949+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-15T01:36:06.949+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-15T01:36:06.949+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-15T01:36:06.949+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-15T01:36:07.075+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-15T01:36:07.077+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-15T01:36:07.078+01:00  INFO 59876 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-15T01:36:07.080+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736901367079 with initial instances count: 1
+2025-01-15T01:36:07.085+01:00  INFO 59876 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DS_MICROSERVICES with eureka with status UP
+2025-01-15T01:36:07.085+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736901367085, current=UP, previous=STARTING]
+2025-01-15T01:36:07.086+01:00  INFO 59876 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T01:36:07.106+01:00  INFO 59876 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T01:36:07.143+01:00  INFO 59876 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8083
+2025-01-15T01:36:07.143+01:00  INFO 59876 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-01-15T01:36:07.195+01:00  WARN 59876 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'springAxonConfiguration'
+2025-01-15T01:36:07.205+01:00  INFO 59876 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:36:07.206+01:00  INFO 59876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-15T01:36:07.209+01:00  INFO 59876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-15T01:36:09.216+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-15T01:36:12.217+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-15T01:36:12.220+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - deregister  status: 200
+2025-01-15T01:36:12.223+01:00  INFO 59876 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-15T01:36:12.234+01:00  INFO 59876 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-15T01:36:12.244+01:00 ERROR 59876 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    io.grpc.Metadata$Key.validateName(Metadata.java:754)
+
+The following method did not exist:
+
+    'void com.google.common.base.Preconditions.checkArgument(boolean, java.lang.String, char, java.lang.Object)'
+
+The calling method's class, io.grpc.Metadata$Key, was loaded from the following location:
+
+    jar:file:/home/hamoud/.m2/repository/io/grpc/grpc-api/1.50.2/grpc-api-1.50.2.jar!/io/grpc/Metadata$Key.class
+
+The called method's class, com.google.common.base.Preconditions, is available from the following locations:
+
+    jar:file:/home/hamoud/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/base/Preconditions.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    com.google.common.base.Preconditions: file:/home/hamoud/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes io.grpc.Metadata$Key and com.google.common.base.Preconditions
+
+2025-01-15T01:38:14.176+01:00  INFO 60227 --- [main] c.d.d.DsMicroservicesApplication         : Starting DsMicroservicesApplication using Java 17.0.13 with PID 60227 (/home/hamoud/IdeaProjects/DS_microservices/ds_microservices/target/classes started by hamoud in /home/hamoud/IdeaProjects/DS_microservices/ds_microservices)
+2025-01-15T01:38:14.177+01:00  INFO 60227 --- [main] c.d.d.DsMicroservicesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:38:14.634+01:00  INFO 60227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T01:38:14.696+01:00  INFO 60227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2025-01-15T01:38:14.807+01:00  INFO 60227 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=679bee0d-2417-3891-999d-9e74d5f36346
+2025-01-15T01:38:15.063+01:00  INFO 60227 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:38:15.064+01:00  INFO 60227 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:38:15.065+01:00  INFO 60227 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:38:15.206+01:00  INFO 60227 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T01:38:15.222+01:00  INFO 60227 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-15T01:38:15.223+01:00  INFO 60227 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-15T01:38:15.304+01:00  INFO 60227 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15T01:38:15.314+01:00  INFO 60227 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-15T01:38:15.441+01:00  INFO 60227 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@af94b0b
+2025-01-15T01:38:15.442+01:00  INFO 60227 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-15T01:38:15.458+01:00  WARN 60227 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15T01:38:15.459+01:00  WARN 60227 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-15T01:38:15.831+01:00  INFO 60227 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15T01:38:15.854+01:00  INFO 60227 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-15T01:38:16.299+01:00  INFO 60227 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-15T01:38:16.575+01:00  INFO 60227 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoint(s) beneath base path '/actuator'
+2025-01-15T01:38:16.669+01:00  INFO 60227 --- [main] o.a.s.a.XStreamAutoConfiguration         : Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2025-01-15T01:38:16.724+01:00  INFO 60227 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [com.dailycodework.ds_microservices].
+2025-01-15T01:38:16.724+01:00  INFO 60227 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2025-01-15T01:38:16.724+01:00  INFO 60227 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.deadletter.jpa].
+2025-01-15T01:38:16.724+01:00  INFO 60227 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2025-01-15T01:38:16.724+01:00  INFO 60227 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventsourcing.eventstore.jpa].
+2025-01-15T01:38:16.731+01:00  INFO 60227 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:38:16.731+01:00  INFO 60227 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:38:16.731+01:00  INFO 60227 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2025-01-15T01:38:16.731+01:00  INFO 60227 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2025-01-15T01:38:16.963+01:00  INFO 60227 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-15T01:38:16.987+01:00  WARN 60227 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-15T01:38:17.023+01:00  INFO 60227 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-15T01:38:17.036+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-15T01:38:17.038+01:00  INFO 60227 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:38:17.046+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-15T01:38:17.046+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-15T01:38:17.046+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-15T01:38:17.046+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-15T01:38:17.046+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-15T01:38:17.046+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-15T01:38:17.046+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-15T01:38:17.172+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-15T01:38:17.174+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-15T01:38:17.175+01:00  INFO 60227 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-15T01:38:17.177+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736901497177 with initial instances count: 1
+2025-01-15T01:38:17.181+01:00  INFO 60227 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DS_MICROSERVICES with eureka with status UP
+2025-01-15T01:38:17.182+01:00  INFO 60227 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736901497182, current=UP, previous=STARTING]
+2025-01-15T01:38:17.182+01:00  INFO 60227 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T01:38:17.199+01:00  INFO 60227 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T01:38:17.237+01:00  INFO 60227 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8083
+2025-01-15T01:38:17.245+01:00  INFO 60227 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-01-15T01:38:17.334+01:00  INFO 60227 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Requesting connection details from localhost:8124
+2025-01-15T01:38:17.452+01:00  INFO 60227 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Successfully connected to localhost:8124
+2025-01-15T01:38:17.457+01:00  INFO 60227 --- [main] i.a.a.connector.impl.ControlChannelImpl  : Connected instruction stream for context 'default'. Sending client identification
+2025-01-15T01:38:17.473+01:00  INFO 60227 --- [main] c.d.d.DsMicroservicesApplication         : Started DsMicroservicesApplication in 3.473 seconds (process running for 3.676)
+2025-01-15T01:43:17.047+01:00  INFO 60227 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:48:17.047+01:00  INFO 60227 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:53:17.048+01:00  INFO 60227 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:58:17.048+01:00  INFO 60227 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:58:49.952+01:00  INFO 60227 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DS_MICROSERVICES with eureka with status DOWN
+2025-01-15T01:58:49.952+01:00  INFO 60227 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736902729952, current=DOWN, previous=UP]
+2025-01-15T01:58:49.952+01:00  INFO 60227 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T01:58:49.955+01:00  INFO 60227 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T01:58:50.654+01:00  INFO 60227 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:58:50.655+01:00  INFO 60227 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-15T01:58:50.657+01:00  INFO 60227 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-15T01:58:52.665+01:00  INFO 60227 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-15T01:58:55.666+01:00  INFO 60227 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-15T01:58:55.669+01:00  INFO 60227 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - deregister  status: 200
+2025-01-15T01:58:55.671+01:00  INFO 60227 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-15T01:58:57.251+01:00  INFO 62686 --- [main] c.d.d.DsMicroservicesApplication         : Starting DsMicroservicesApplication using Java 17.0.13 with PID 62686 (/home/hamoud/IdeaProjects/DS_microservices/ds_microservices/target/classes started by hamoud in /home/hamoud/IdeaProjects/DS_microservices/ds_microservices)
+2025-01-15T01:58:57.251+01:00  INFO 62686 --- [main] c.d.d.DsMicroservicesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:58:57.295+01:00  WARN 62686 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2025-01-15T01:58:57.297+01:00  WARN 62686 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T01:58:57.297+01:00  WARN 62686 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T01:58:57.303+01:00  WARN 62686 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T01:58:57.704+01:00  INFO 62686 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T01:58:57.766+01:00  INFO 62686 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2025-01-15T01:58:57.880+01:00  INFO 62686 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c037c349-347a-330a-bf8f-2c69675fa735
+2025-01-15T01:58:58.143+01:00  INFO 62686 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:58:58.144+01:00  INFO 62686 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:58:58.145+01:00  INFO 62686 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T01:58:58.286+01:00  INFO 62686 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T01:58:58.303+01:00  INFO 62686 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-15T01:58:58.303+01:00  INFO 62686 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-15T01:58:58.386+01:00  INFO 62686 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15T01:58:58.395+01:00  INFO 62686 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-15T01:58:58.523+01:00  INFO 62686 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25ee3caa
+2025-01-15T01:58:58.524+01:00  INFO 62686 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-15T01:58:58.541+01:00  WARN 62686 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15T01:58:58.541+01:00  WARN 62686 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-15T01:58:58.920+01:00  INFO 62686 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15T01:58:58.979+01:00  INFO 62686 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T01:58:59.056+01:00  INFO 62686 --- [main] o.a.s.a.XStreamAutoConfiguration         : Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2025-01-15T01:58:59.115+01:00  INFO 62686 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [com.dailycodework.ds_microservices].
+2025-01-15T01:58:59.116+01:00  INFO 62686 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2025-01-15T01:58:59.116+01:00  INFO 62686 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.deadletter.jpa].
+2025-01-15T01:58:59.116+01:00  INFO 62686 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2025-01-15T01:58:59.116+01:00  INFO 62686 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventsourcing.eventstore.jpa].
+2025-01-15T01:58:59.123+01:00  INFO 62686 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:58:59.123+01:00  INFO 62686 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T01:58:59.123+01:00  INFO 62686 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2025-01-15T01:58:59.123+01:00  INFO 62686 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-15T01:58:59.618+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-15T01:58:59.619+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-15T01:58:59.619+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-15T01:58:59.619+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-15T01:58:59.619+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-15T01:58:59.619+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-15T01:58:59.619+01:00  INFO 62686 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-15T01:58:59.888+01:00  INFO 62686 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoint(s) beneath base path '/actuator'
+2025-01-15T01:59:00.142+01:00  INFO 62686 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-15T01:59:00.165+01:00  WARN 62686 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-15T01:59:00.220+01:00  INFO 62686 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-15T01:59:00.232+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-15T01:59:00.234+01:00  INFO 62686 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T01:59:00.242+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-15T01:59:00.242+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-15T01:59:00.242+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-15T01:59:00.242+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-15T01:59:00.242+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-15T01:59:00.242+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-15T01:59:00.242+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-15T01:59:00.360+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-15T01:59:00.361+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-15T01:59:00.362+01:00  INFO 62686 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-15T01:59:00.364+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736902740364 with initial instances count: 1
+2025-01-15T01:59:00.368+01:00  INFO 62686 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DS_MICROSERVICES with eureka with status UP
+2025-01-15T01:59:00.369+01:00  INFO 62686 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736902740369, current=UP, previous=STARTING]
+2025-01-15T01:59:00.370+01:00  INFO 62686 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T01:59:00.387+01:00  INFO 62686 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T01:59:00.428+01:00  INFO 62686 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8083
+2025-01-15T01:59:00.429+01:00  INFO 62686 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-01-15T01:59:00.523+01:00  INFO 62686 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Requesting connection details from localhost:8124
+2025-01-15T01:59:00.600+01:00  INFO 62686 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Successfully connected to localhost:8124
+2025-01-15T01:59:00.605+01:00  INFO 62686 --- [main] i.a.a.connector.impl.ControlChannelImpl  : Connected instruction stream for context 'default'. Sending client identification
+2025-01-15T01:59:00.620+01:00  INFO 62686 --- [main] i.a.a.c.command.impl.CommandChannelImpl  : CommandChannel for context 'default' connected, 0 command handlers registered
+2025-01-15T01:59:00.621+01:00  INFO 62686 --- [main] i.a.a.c.command.impl.CommandChannelImpl  : Registered handler for command 'com.dailycodework.ds_microservices.commands.CreateCollaborationCommand' in context 'default'
+2025-01-15T01:59:00.696+01:00  INFO 62686 --- [main] c.d.d.DsMicroservicesApplication         : Started DsMicroservicesApplication in 3.661 seconds (process running for 3.97)
+2025-01-15T01:59:00.773+01:00  INFO 62686 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Worker assigned to segment Segment[0/0] for processing
+2025-01-15T01:59:00.780+01:00  INFO 62686 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.dailycodework.ds_microservices.handlers, segment=Segment[0/0]}
+2025-01-15T01:59:00.785+01:00  INFO 62686 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Fetched token: null for segment: Segment[0/0]
+2025-01-15T02:01:12.299+01:00 ERROR 62686 --- [QueryProcessor-0] a.w.r.e.AbstractErrorWebExceptionHandler : [8d6f51c6-10]  500 Server Error for HTTP GET "/api/collaborations"
+
+org.axonframework.queryhandling.NoHandlerForQueryException: No handler for query: com.dailycodework.ds_microservices.queries.GetAllCollaborationsQuery
+	at org.axonframework.axonserver.connector.ErrorCode.lambda$static$15(ErrorCode.java:114) ~[axon-server-connector-4.8.0.jar:4.8.0]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Handler com.dailycodework.ds_microservices.controllers.CollaborationController#getAllCollaborations() [DispatcherHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.web.filter.reactive.ServerHttpObservationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/collaborations" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.axonframework.axonserver.connector.ErrorCode.lambda$static$15(ErrorCode.java:114) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.ErrorCode.convert(ErrorCode.java:201) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.GrpcBackedResponseMessage.<init>(GrpcBackedResponseMessage.java:65) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.QuerySerializer.deserializeResponse(QuerySerializer.java:215) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.AxonServerQueryBus$ResponseProcessingTask.lambda$run$0(AxonServerQueryBus.java:883) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.tracing.Span.run(Span.java:101) ~[axon-messaging-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.AxonServerQueryBus$ResponseProcessingTask.run(AxonServerQueryBus.java:882) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.PriorityRunnable.run(PriorityRunnable.java:58) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+		at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-01-15T02:01:34.389+01:00 ERROR 62686 --- [QueryProcessor-2] a.w.r.e.AbstractErrorWebExceptionHandler : [8d6f51c6-14]  500 Server Error for HTTP GET "/api/collaborations"
+
+org.axonframework.queryhandling.NoHandlerForQueryException: No handler for query: com.dailycodework.ds_microservices.queries.GetAllCollaborationsQuery
+	at org.axonframework.axonserver.connector.ErrorCode.lambda$static$15(ErrorCode.java:114) ~[axon-server-connector-4.8.0.jar:4.8.0]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Handler com.dailycodework.ds_microservices.controllers.CollaborationController#getAllCollaborations() [DispatcherHandler]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.web.filter.reactive.ServerHttpObservationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/collaborations" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.axonframework.axonserver.connector.ErrorCode.lambda$static$15(ErrorCode.java:114) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.ErrorCode.convert(ErrorCode.java:201) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.GrpcBackedResponseMessage.<init>(GrpcBackedResponseMessage.java:65) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.QuerySerializer.deserializeResponse(QuerySerializer.java:215) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.AxonServerQueryBus$ResponseProcessingTask.lambda$run$0(AxonServerQueryBus.java:883) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.tracing.Span.run(Span.java:101) ~[axon-messaging-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.query.AxonServerQueryBus$ResponseProcessingTask.run(AxonServerQueryBus.java:882) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at org.axonframework.axonserver.connector.PriorityRunnable.run(PriorityRunnable.java:58) ~[axon-server-connector-4.8.0.jar:4.8.0]
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+		at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-01-15T02:04:00.243+01:00  INFO 62686 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T02:09:00.243+01:00  INFO 62686 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T02:11:30.633+01:00  INFO 62686 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DS_MICROSERVICES with eureka with status DOWN
+2025-01-15T02:11:30.633+01:00  INFO 62686 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736903490633, current=DOWN, previous=UP]
+2025-01-15T02:11:30.633+01:00  INFO 62686 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T02:11:30.635+01:00  INFO 62686 --- [SpringApplicationShutdownHook] o.a.e.TrackingEventProcessor             : Shutdown state set for Processor 'com.dailycodework.ds_microservices.handlers'.
+2025-01-15T02:11:30.635+01:00  INFO 62686 --- [SpringApplicationShutdownHook] o.a.e.TrackingEventProcessor             : Processor 'com.dailycodework.ds_microservices.handlers' awaiting termination...
+2025-01-15T02:11:30.635+01:00  INFO 62686 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T02:11:31.221+01:00  INFO 62686 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Released claim
+2025-01-15T02:11:31.221+01:00  INFO 62686 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Worker for segment Segment[0/0] stopped.
+2025-01-15T02:11:31.226+01:00  INFO 62686 --- [SpringApplicationShutdownHook] i.a.a.c.command.impl.CommandChannelImpl  : Deregistered handler for command 'com.dailycodework.ds_microservices.commands.CreateCollaborationCommand' in context 'default'
+2025-01-15T02:11:31.730+01:00  INFO 62686 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T02:11:31.731+01:00  INFO 62686 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-15T02:11:31.733+01:00  INFO 62686 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-15T02:11:33.740+01:00  INFO 62686 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-15T02:11:36.741+01:00  INFO 62686 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-15T02:11:36.744+01:00  INFO 62686 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - deregister  status: 200
+2025-01-15T02:11:36.746+01:00  INFO 62686 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-15T02:16:20.510+01:00  INFO 65390 --- [main] c.d.d.DsMicroservicesApplication         : Starting DsMicroservicesApplication using Java 17.0.13 with PID 65390 (/home/hamoud/IdeaProjects/DS_microservices/ds_microservices/target/classes started by hamoud in /home/hamoud/IdeaProjects/DS_microservices/ds_microservices)
+2025-01-15T02:16:20.512+01:00  INFO 65390 --- [main] c.d.d.DsMicroservicesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:16:20.596+01:00  WARN 65390 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2025-01-15T02:16:20.600+01:00  WARN 65390 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T02:16:20.600+01:00  WARN 65390 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T02:16:20.611+01:00  WARN 65390 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T02:16:21.300+01:00  INFO 65390 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T02:16:21.387+01:00  INFO 65390 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2025-01-15T02:16:21.565+01:00  INFO 65390 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c037c349-347a-330a-bf8f-2c69675fa735
+2025-01-15T02:16:22.005+01:00  INFO 65390 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T02:16:22.008+01:00  INFO 65390 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T02:16:22.011+01:00  INFO 65390 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T02:16:22.295+01:00  INFO 65390 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T02:16:22.334+01:00  INFO 65390 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-15T02:16:22.336+01:00  INFO 65390 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-15T02:16:22.469+01:00  INFO 65390 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15T02:16:22.482+01:00  INFO 65390 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-15T02:16:22.677+01:00  INFO 65390 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67b09e34
+2025-01-15T02:16:22.679+01:00  INFO 65390 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-15T02:16:22.718+01:00  WARN 65390 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15T02:16:22.719+01:00  WARN 65390 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-15T02:16:23.378+01:00  INFO 65390 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15T02:16:23.422+01:00  INFO 65390 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T02:16:23.555+01:00  INFO 65390 --- [main] o.a.s.a.XStreamAutoConfiguration         : Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2025-01-15T02:16:23.624+01:00  INFO 65390 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [com.dailycodework.ds_microservices].
+2025-01-15T02:16:23.624+01:00  INFO 65390 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2025-01-15T02:16:23.624+01:00  INFO 65390 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.deadletter.jpa].
+2025-01-15T02:16:23.624+01:00  INFO 65390 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2025-01-15T02:16:23.624+01:00  INFO 65390 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventsourcing.eventstore.jpa].
+2025-01-15T02:16:23.641+01:00  INFO 65390 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T02:16:23.641+01:00  INFO 65390 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T02:16:23.642+01:00  INFO 65390 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2025-01-15T02:16:23.642+01:00  INFO 65390 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2025-01-15T02:16:24.804+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-15T02:16:24.804+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-15T02:16:24.804+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-15T02:16:24.804+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-15T02:16:24.804+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-15T02:16:24.805+01:00  INFO 65390 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-15T02:16:25.459+01:00  INFO 65390 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoint(s) beneath base path '/actuator'
+2025-01-15T02:16:25.907+01:00  INFO 65390 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-15T02:16:25.946+01:00  WARN 65390 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-15T02:16:26.009+01:00  INFO 65390 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-15T02:16:26.026+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-15T02:16:26.029+01:00  INFO 65390 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T02:16:26.041+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-15T02:16:26.041+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-15T02:16:26.041+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-15T02:16:26.041+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-15T02:16:26.041+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-15T02:16:26.041+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-15T02:16:26.041+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-15T02:16:26.209+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-15T02:16:26.210+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-15T02:16:26.212+01:00  INFO 65390 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-15T02:16:26.215+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736903786214 with initial instances count: 1
+2025-01-15T02:16:26.221+01:00  INFO 65390 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DS_MICROSERVICES with eureka with status UP
+2025-01-15T02:16:26.221+01:00  INFO 65390 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736903786221, current=UP, previous=STARTING]
+2025-01-15T02:16:26.222+01:00  INFO 65390 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T02:16:26.250+01:00  INFO 65390 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T02:16:26.298+01:00  INFO 65390 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8083
+2025-01-15T02:16:26.299+01:00  INFO 65390 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-01-15T02:16:26.435+01:00  INFO 65390 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Requesting connection details from localhost:8124
+2025-01-15T02:16:26.594+01:00  INFO 65390 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Successfully connected to localhost:8124
+2025-01-15T02:16:26.601+01:00  INFO 65390 --- [main] i.a.a.connector.impl.ControlChannelImpl  : Connected instruction stream for context 'default'. Sending client identification
+2025-01-15T02:16:26.609+01:00  INFO 65390 --- [main] i.a.a.c.command.impl.CommandChannelImpl  : CommandChannel for context 'default' connected, 0 command handlers registered
+2025-01-15T02:16:26.611+01:00  INFO 65390 --- [main] i.a.a.c.command.impl.CommandChannelImpl  : Registered handler for command 'com.dailycodework.ds_microservices.commands.CreateCollaborationCommand' in context 'default'
+2025-01-15T02:16:26.713+01:00  INFO 65390 --- [main] c.d.d.DsMicroservicesApplication         : Started DsMicroservicesApplication in 6.913 seconds (process running for 7.323)
+2025-01-15T02:16:26.801+01:00  INFO 65390 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Worker assigned to segment Segment[0/0] for processing
+2025-01-15T02:16:26.833+01:00  INFO 65390 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.dailycodework.ds_microservices.handlers, segment=Segment[0/0]}
+2025-01-15T02:16:26.841+01:00  INFO 65390 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Fetched token: null for segment: Segment[0/0]
+2025-01-15T02:18:35.047+01:00  INFO 65390 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DS_MICROSERVICES with eureka with status DOWN
+2025-01-15T02:18:35.047+01:00  INFO 65390 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736903915047, current=DOWN, previous=UP]
+2025-01-15T02:18:35.047+01:00  INFO 65390 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T02:18:35.048+01:00  INFO 65390 --- [SpringApplicationShutdownHook] o.a.e.TrackingEventProcessor             : Shutdown state set for Processor 'com.dailycodework.ds_microservices.handlers'.
+2025-01-15T02:18:35.048+01:00  INFO 65390 --- [SpringApplicationShutdownHook] o.a.e.TrackingEventProcessor             : Processor 'com.dailycodework.ds_microservices.handlers' awaiting termination...
+2025-01-15T02:18:35.051+01:00  INFO 65390 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T02:18:35.712+01:00  INFO 65390 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Released claim
+2025-01-15T02:18:35.713+01:00  INFO 65390 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Worker for segment Segment[0/0] stopped.
+2025-01-15T02:18:35.724+01:00  INFO 65390 --- [SpringApplicationShutdownHook] i.a.a.c.command.impl.CommandChannelImpl  : Deregistered handler for command 'com.dailycodework.ds_microservices.commands.CreateCollaborationCommand' in context 'default'
+2025-01-15T02:18:36.632+01:00  INFO 65390 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T02:18:36.633+01:00  INFO 65390 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-15T02:18:36.636+01:00  INFO 65390 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-15T02:18:38.642+01:00  INFO 65390 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-15T02:18:41.643+01:00  INFO 65390 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-15T02:18:41.647+01:00  INFO 65390 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - deregister  status: 200
+2025-01-15T02:18:41.650+01:00  INFO 65390 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-15T10:54:38.103+01:00  INFO 76627 --- [main] c.d.d.DsMicroservicesApplication         : Starting DsMicroservicesApplication using Java 17.0.13 with PID 76627 (/home/hamoud/IdeaProjects/DS_microservices/ds_microservices/target/classes started by hamoud in /home/hamoud/IdeaProjects/DS_microservices/ds_microservices)
+2025-01-15T10:54:38.104+01:00  INFO 76627 --- [main] c.d.d.DsMicroservicesApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T10:54:38.154+01:00  WARN 76627 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.spring.stereotype.Aggregate with appropriate @AliasFor declarations: [type]
+2025-01-15T10:54:38.156+01:00  WARN 76627 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T10:54:38.156+01:00  WARN 76627 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventsourcing.EventSourcingHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T10:54:38.164+01:00  WARN 76627 --- [main] o.s.c.annotation.AnnotationTypeMapping   : Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.axonframework.eventhandling.EventHandler with appropriate @AliasFor declarations: [payloadType]
+2025-01-15T10:54:38.683+01:00  INFO 76627 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T10:54:38.749+01:00  INFO 76627 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2025-01-15T10:54:38.868+01:00  INFO 76627 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c037c349-347a-330a-bf8f-2c69675fa735
+2025-01-15T10:54:39.154+01:00  INFO 76627 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T10:54:39.156+01:00  INFO 76627 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T10:54:39.157+01:00  INFO 76627 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-01-15T10:54:39.301+01:00  INFO 76627 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T10:54:39.318+01:00  INFO 76627 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-15T10:54:39.319+01:00  INFO 76627 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-15T10:54:39.409+01:00  INFO 76627 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15T10:54:39.419+01:00  INFO 76627 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-15T10:54:39.556+01:00  INFO 76627 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@665f88e1
+2025-01-15T10:54:39.557+01:00  INFO 76627 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-15T10:54:39.574+01:00  WARN 76627 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15T10:54:39.575+01:00  WARN 76627 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-15T10:54:39.993+01:00  INFO 76627 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15T10:54:40.018+01:00  INFO 76627 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T10:54:40.098+01:00  INFO 76627 --- [main] o.a.s.a.XStreamAutoConfiguration         : Initializing an XStream instance since none was found. The auto configuration base packages will be used as wildcards for the XStream security settings.
+2025-01-15T10:54:40.150+01:00  INFO 76627 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [com.dailycodework.ds_microservices].
+2025-01-15T10:54:40.151+01:00  INFO 76627 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.tokenstore].
+2025-01-15T10:54:40.151+01:00  INFO 76627 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventhandling.deadletter.jpa].
+2025-01-15T10:54:40.151+01:00  INFO 76627 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.modelling.saga.repository.jpa].
+2025-01-15T10:54:40.151+01:00  INFO 76627 --- [main] o.a.s.util.XStreamSecurityTypeUtility    : Constructing wildcard type for base package [org.axonframework.eventsourcing.eventstore.jpa].
+2025-01-15T10:54:40.164+01:00  INFO 76627 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.Dom4JToByteArrayConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T10:54:40.164+01:00  INFO 76627 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToDom4jConverter] is ignored. It seems to rely on a class that is not available in the class loader: org/dom4j/Document
+2025-01-15T10:54:40.165+01:00  INFO 76627 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.XomToStringConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/Document
+2025-01-15T10:54:40.165+01:00  INFO 76627 --- [main] o.a.serialization.ChainingConverter      : ContentTypeConverter of type [class org.axonframework.serialization.xml.InputStreamToXomConverter] is ignored. It seems to rely on a class that is not available in the class loader: nu/xom/ParsingException
+2025-01-15T10:54:40.731+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-15T10:54:40.732+01:00  INFO 76627 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-15T10:54:41.136+01:00  INFO 76627 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoint(s) beneath base path '/actuator'
+2025-01-15T10:54:41.407+01:00  INFO 76627 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-15T10:54:41.438+01:00  WARN 76627 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-15T10:54:41.484+01:00  INFO 76627 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-15T10:54:41.497+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-15T10:54:41.499+01:00  INFO 76627 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T10:54:41.507+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-15T10:54:41.507+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-15T10:54:41.507+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-15T10:54:41.507+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-15T10:54:41.507+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-15T10:54:41.508+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-15T10:54:41.508+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-15T10:54:41.633+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-15T10:54:41.634+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-15T10:54:41.635+01:00  INFO 76627 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-15T10:54:41.637+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736934881637 with initial instances count: 1
+2025-01-15T10:54:41.642+01:00  INFO 76627 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DS_MICROSERVICES with eureka with status UP
+2025-01-15T10:54:41.642+01:00  INFO 76627 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736934881642, current=UP, previous=STARTING]
+2025-01-15T10:54:41.643+01:00  INFO 76627 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T10:54:41.661+01:00  INFO 76627 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T10:54:41.703+01:00  INFO 76627 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8083
+2025-01-15T10:54:41.703+01:00  INFO 76627 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-01-15T10:54:41.915+01:00  INFO 76627 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Requesting connection details from localhost:8124
+2025-01-15T10:54:41.998+01:00  INFO 76627 --- [main] i.a.a.c.impl.AxonServerManagedChannel    : Successfully connected to localhost:8124
+2025-01-15T10:54:42.003+01:00  INFO 76627 --- [main] i.a.a.connector.impl.ControlChannelImpl  : Connected instruction stream for context 'default'. Sending client identification
+2025-01-15T10:54:42.008+01:00  INFO 76627 --- [main] i.a.a.c.command.impl.CommandChannelImpl  : CommandChannel for context 'default' connected, 0 command handlers registered
+2025-01-15T10:54:42.010+01:00  INFO 76627 --- [main] i.a.a.c.command.impl.CommandChannelImpl  : Registered handler for command 'com.dailycodework.ds_microservices.commands.CreateCollaborationCommand' in context 'default'
+2025-01-15T10:54:42.065+01:00  INFO 76627 --- [main] c.d.d.DsMicroservicesApplication         : Started DsMicroservicesApplication in 4.299 seconds (process running for 4.595)
+2025-01-15T10:54:42.123+01:00  INFO 76627 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Worker assigned to segment Segment[0/0] for processing
+2025-01-15T10:54:42.148+01:00  INFO 76627 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Using current Thread for last segment worker: TrackingSegmentWorker{processor=com.dailycodework.ds_microservices.handlers, segment=Segment[0/0]}
+2025-01-15T10:54:42.155+01:00  INFO 76627 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Fetched token: null for segment: Segment[0/0]
+2025-01-15T10:59:41.509+01:00  INFO 76627 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T11:04:41.509+01:00  INFO 76627 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T11:09:41.510+01:00  INFO 76627 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-15T11:10:37.577+01:00  INFO 76627 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DS_MICROSERVICES with eureka with status DOWN
+2025-01-15T11:10:37.577+01:00  INFO 76627 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736935837577, current=DOWN, previous=UP]
+2025-01-15T11:10:37.577+01:00  INFO 76627 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083: registering service...
+2025-01-15T11:10:37.578+01:00  INFO 76627 --- [SpringApplicationShutdownHook] o.a.e.TrackingEventProcessor             : Shutdown state set for Processor 'com.dailycodework.ds_microservices.handlers'.
+2025-01-15T11:10:37.578+01:00  INFO 76627 --- [SpringApplicationShutdownHook] o.a.e.TrackingEventProcessor             : Processor 'com.dailycodework.ds_microservices.handlers' awaiting termination...
+2025-01-15T11:10:37.580+01:00  INFO 76627 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - registration status: 204
+2025-01-15T11:10:38.119+01:00  INFO 76627 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Released claim
+2025-01-15T11:10:38.119+01:00  INFO 76627 --- [EventProcessor[com.dailycodework.ds_microservices.handlers]-0] o.a.e.TrackingEventProcessor             : Worker for segment Segment[0/0] stopped.
+2025-01-15T11:10:38.129+01:00  INFO 76627 --- [SpringApplicationShutdownHook] i.a.a.c.command.impl.CommandChannelImpl  : Deregistered handler for command 'com.dailycodework.ds_microservices.commands.CreateCollaborationCommand' in context 'default'
+2025-01-15T11:10:38.522+01:00  INFO 76627 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T11:10:38.523+01:00  INFO 76627 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-15T11:10:38.527+01:00  INFO 76627 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-15T11:10:40.534+01:00  INFO 76627 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-15T11:10:43.535+01:00  WARN 76627 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-01-15T11:10:43.535+01:00  INFO 76627 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-15T11:10:43.537+01:00  INFO 76627 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DS_MICROSERVICES/gigabyte-g5-kf5:ds_microservices:8083 - deregister  status: 200
+2025-01-15T11:10:43.539+01:00  INFO 76627 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
